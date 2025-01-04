@@ -1,0 +1,97 @@
+/* ASSIGNMENT ACT 12#*/
+/* BY:CLINT JUSTINE N. LORENZO G11-RYZEN */ 
+body {
+    background-color: burlywood;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    height: 100svh;
+    font-family: 'Courier New', Courier, monospace;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --bg-hover-lightbrown: hsl(33, 42%, 78%);
+    --bg-con-lightbrown: hsla(34, 78%, 90%, 0.788);
+    --CssScan-ShadowBox: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+    --box: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;;
+}
+
+.container {
+    background-color: var(--bg-con-lightbrown);
+    box-shadow: var(--CssScan-ShadowBox);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* about  */
+.container .about-act {
+    width: 100%;
+    text-align: center;
+    font-family: monospace;
+    box-shadow: var(--box);
+    padding-block: 12px;  
+    border-radius: 10px;
+    transition: all 0.3s;
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.39047619047619053rem + 3.0476190476190474vw, 1.2rem);
+}
+
+/* Name and section */
+.container .name-section {
+    width: 100%;
+    text-align: center;
+    box-shadow: var(--box);
+    padding-block: 5px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    font-size: 0.7rem;
+    font-size: clamp(0.7rem, -0.06190476190476202rem + 3.8095238095238098vw, 0.95rem);
+}
+
+/* Table */
+.TableNiClint {
+    width: 100%;
+    box-shadow:var(--box);
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+.TableNiClint caption {
+    display: inline-block;
+}
+.TableNiClint .tableCat th {
+    text-align: left;
+    background-color: ghostwhite;
+    border: 2px solid black;
+}
+.TableNiClint .tableTop th {
+    background-color: gray;
+    border: 2px solid black;
+    padding-block: 10px;
+    width: 30%;
+}
+
+/* Transittion hover */
+.name-section:hover, .about-act:hover, .TableNiClint:hover {
+    scale: 1.03;
+    background-color: var(--bg-hover-lightbrown);
+    transition: all 0.25s;
+}
+
+/* Responsive media query */
+@media (width <= 375px) {
+    .TableNiClint {
+        padding: 5px !important;
+    }
+    .about-act {
+        padding-block: 5px !important;
+    }
+}
